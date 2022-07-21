@@ -1,7 +1,4 @@
-﻿// See https://aka.ms/new-console-template for more information
-
-using MassTransit;
-using MassTransit.Kafka.Consumer;
+﻿using MassTransit;
 using MassTransit.Kafka.Consumer.Consumers;
 using MassTransit.Kafka.Contracts;
 using MassTransit.KafkaIntegration;
@@ -20,8 +17,6 @@ services.AddMassTransit(x =>
     x.AddRider(rider =>
     {
         rider.AddConsumer<KafkaMessageConsumer>();
-        rider.AddProducer<IMessage>(topicName);
-
         rider.UsingKafka((context, k) =>
         {
             k.Host(kafkaBrokerServers);
@@ -40,5 +35,6 @@ var provider = services.BuildServiceProvider();
 var busControl = provider.GetRequiredService<IBusControl>();
 
 await busControl.StartAsync(new CancellationTokenSource(TimeSpan.FromSeconds(10)).Token);
+
 Console.WriteLine("Started...");
 Console.ReadKey();
