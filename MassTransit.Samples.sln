@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MassTransit.Kafka.Consumer", "MassTransit.Kafka.Consumer\MassTransit.Kafka.Consumer.csproj", "{395DC468-295B-4457-8BEA-90516FABFE46}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MassTransit.Kafka.Contracts", "MassTransit.Kafka.Contracts\MassTransit.Kafka.Contracts.csproj", "{63D3D098-75D6-4467-9D46-EB918CB95CA6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{395DC468-295B-4457-8BEA-90516FABFE46}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{395DC468-295B-4457-8BEA-90516FABFE46}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{395DC468-295B-4457-8BEA-90516FABFE46}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{395DC468-295B-4457-8BEA-90516FABFE46}.Release|Any CPU.Build.0 = Release|Any CPU
+		{63D3D098-75D6-4467-9D46-EB918CB95CA6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{63D3D098-75D6-4467-9D46-EB918CB95CA6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{63D3D098-75D6-4467-9D46-EB918CB95CA6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{63D3D098-75D6-4467-9D46-EB918CB95CA6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
