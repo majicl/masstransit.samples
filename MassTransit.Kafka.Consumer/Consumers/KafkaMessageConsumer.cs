@@ -2,7 +2,7 @@ using Confluent.Kafka;
 using MassTransit.Kafka.Contracts;
 using MassTransit.KafkaIntegration.Contexts;
 
-namespace MassTransit.Kafka.Consumer;
+namespace MassTransit.Kafka.Consumer.Consumers;
 
 public class KafkaMessageConsumer: IConsumer<IMessage>
 {

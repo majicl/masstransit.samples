@@ -2,6 +2,7 @@
 
 using MassTransit;
 using MassTransit.Kafka.Consumer;
+using MassTransit.Kafka.Consumer.Consumers;
 using MassTransit.Kafka.Contracts;
 using MassTransit.KafkaIntegration;
 using Microsoft.Extensions.DependencyInjection;
