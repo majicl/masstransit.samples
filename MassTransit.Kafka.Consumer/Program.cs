@@ -18,7 +18,7 @@ services.AddMassTransit(x =>
         cfg.ConfigureEndpoints(context);
     });
     
-    x.AddRider(rider =>
+    x.AddRider(rider => 
     {
         rider.AddConsumer<KafkaMessageConsumer>();
         rider.UsingKafka((context, k) =>

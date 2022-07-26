@@ -6,12 +6,7 @@
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
     </PropertyGroup>
-    <ItemGroup Condition="'$([System.Runtime.InteropServices.RuntimeInformation]::OSArchitecture)' == 'Arm64' And '$([System.Runtime.InteropServices.RuntimeInformation]::IsOSPlatform($([System.Runtime.InteropServices.OSPlatform]::OSX)))' == 'True'">
-        <Content Include="/opt/homebrew/Cellar/librdkafka/1.9.1/lib/librdkafka.dylib">
-            <Link>librdkafka.dylib</Link>
-            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-        </Content>
-    </ItemGroup>
+
     <ItemGroup>
         <PackageReference Include="MassTransit.AspNetCore" Version="7.3.1" />
         <PackageReference Include="MassTransit.Extensions.DependencyInjection" Version="7.3.1" />
@@ -19,8 +14,9 @@
         <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="7.0.0-preview.6.22324.4" />
         <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="7.0.0-preview.6.22324.4" />
     </ItemGroup>
+
     <ItemGroup>
-      <ProjectReference Include="..\MassTransit.Kafka.Contracts\MassTransit.Kafka.Contracts.csproj" />
+      <ProjectReference Include="..\MassTransit.Kafka.Consumer\MassTransit.Kafka.Consumer.csproj" />
     </ItemGroup>
 
 </Project>

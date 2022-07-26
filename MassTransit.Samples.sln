@@ -4,6 +4,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MassTransit.Kafka.Consumer"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MassTransit.Kafka.Contracts", "MassTransit.Kafka.Contracts\MassTransit.Kafka.Contracts.csproj", "{63D3D098-75D6-4467-9D46-EB918CB95CA6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MassTransit.Kafka.Producer", "MassTransit.Kafka.Producer\MassTransit.Kafka.Producer.csproj", "{99D6B77E-CD80-4CF9-99ED-C66D1655830C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +20,9 @@ Global
 		{63D3D098-75D6-4467-9D46-EB918CB95CA6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{63D3D098-75D6-4467-9D46-EB918CB95CA6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{63D3D098-75D6-4467-9D46-EB918CB95CA6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{99D6B77E-CD80-4CF9-99ED-C66D1655830C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{99D6B77E-CD80-4CF9-99ED-C66D1655830C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{99D6B77E-CD80-4CF9-99ED-C66D1655830C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{99D6B77E-CD80-4CF9-99ED-C66D1655830C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
